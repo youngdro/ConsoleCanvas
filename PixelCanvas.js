@@ -269,8 +269,8 @@ window.PixelCanvas = new function() {
 	};
 	// 渲染画布的尺寸
 	this.Renderer.prototype.setSize = function(width, height) {
-		this.width = width;
-		this.height = height;
+		this.width = parseInt(width);
+		this.height = parseInt(height);
 		this.canvas = [];
 		for (let j = 0; j < height; j++) {
 			this.canvas.push(new Array(width));
@@ -325,6 +325,8 @@ window.PixelCanvas = new function() {
 				// 从组合里的相对坐标转换为画布上的绝对坐标
 				positionY += ele.group.position.y;
 				positionX += ele.group.position.x;
+				// 叠加上组合的层叠优先级
+				z_index += ele.group.z_index;
 			}
 			for (let y = positionY; y < positionY + ele.vals.length; y++) {
 				if (y >= 0 && y < this.height) {
