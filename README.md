@@ -2,6 +2,8 @@
 
 ## 用console.log当画笔，用调试台当画板。
 
+详细实现方案及介绍可戳[这儿](https://juejin.im/post/5afafb0c6fb9a07ac65331fe)。
+
 运行方式：
 
 clone本项目到本地后，打开目录下的index.html，然后拷贝各demo文件夹里的js代码于调试台中运行，即见结果。
