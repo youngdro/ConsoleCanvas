@@ -26,3 +26,4 @@ clone本项目到本地后，打开目录下的index.html，然后拷贝各demo�
 
 ![](https://user-gold-cdn.xitu.io/2018/5/16/163697912af69426?w=420&h=164&f=gif&s=261710)
 
+Hanoi塔的[在线示例](https://youngdro.github.io/ConsoleCanvas/index.html)
